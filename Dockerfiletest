@@ -1,0 +1,5 @@
+FROM maven:3.5.3-jdk-8-alpine
+RUN mkdir -p /gokul
+COPY ./. /gokul
+WORKDIR /gokul
+CMD ["mvn","test"]
